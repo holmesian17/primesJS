@@ -6,9 +6,9 @@ for (let current = 0; current < 100; current = current + 1) {
   	  if (current % nums[i] != 0 && i !== nums.length) {
 		continue; }
 	  else if (current % nums[i] != 0 && i == nums.length) {
-		primes.push(current);
-	  else	
-		(break;) 
-    }
+		primes.push(current); }
+	  else if (current % nums[i] == 0) {	
+      	break;} 
+    
 console.log(primes)
 }
